@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANVAS</title>
+</head>
+<body>
+    <canvas id="dibujo" width="350" height="200"
+    style="border: 3px solid green;"></canvas>
+    <script>
+        var a = document.getElementById("dibujo");
+        var ctx = a.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(150, 100, 80, 0, 2 * Math.PI);
+        ctx.strokeStyle = "red";
+        ctx.fillstyle = "blue"; 
+        ctx.stroke();
+    </script>
+    <h1>curso html</h1>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videosv</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <br>
+        <button onclick="playpause()">play/pause</button>
+        <button onclick="completa()">completa</button>
+        <button onclick="normal()">normal</button>
+    </div><br><br>
+    <video id="ejemplo" width="360" poster="videos/fondo.png">
+        <source src="videos/ejemplo.mp4">
+    </video>
+    <!--<video width="360" height="240" autoplay controls>
+        <source src="videos/ejemplo.mp4">-->
+    </video>
+    <script>
+            var mi_video = document.getElementById("ejemplo")
+            function playpause() {
+                if (mi_video.paused) {
+                    mi_video.play();
+                }
+                else
+                mi_video.pause();
+            
+        }
+        function completa() {
+            mi_video.width = 720;
+        }
+        function normal() {
+            mi_video.width = 360;
+        }
+    </script>
+    <iframe src="https://www.youtube.com/embed/PLg9145ptuAijj9GoHPTcYT8IoQAOchM-n&index=8?controls=0" frameborder="0"></iframe>
+</body>
+</html>
